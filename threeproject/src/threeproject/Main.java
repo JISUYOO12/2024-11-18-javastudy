@@ -13,7 +13,7 @@
 		프로그램의 시작
 		public static void main(String[] args)
 		{
-			//시작 ==> 코딩
+			//시작 ==> 코딩!!
 		}
 }
 
