@@ -130,7 +130,7 @@
  	4. 출력
  		System.out.printIn(변수명)
  		
- 	1) 변수를 만드는 방법
+ 	1) 변수를 만드는 방법 -26page
  		1. 알파벳이나 한글로 시작한다
  			단 알파벳은 대소문자를 구분한다.
  		2. 숫자 사용이 가능
@@ -140,7 +140,7 @@
  			   단어가 두개
  			   kor_score
  			   _kor : 임시변수
- 			   file_name , file_size ...
+ 			   file_name , file_size ...  ***fileName
  		4. 키워드는 사용 할 수 없다
  			==== 자바에서 사용하는 단어
  			int int
