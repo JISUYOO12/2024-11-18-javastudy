@@ -45,7 +45,6 @@ public class 변수_4 {
 		int a=10;
 		a=20;
 		
-
 	}
 
 }

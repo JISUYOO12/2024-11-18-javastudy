@@ -166,7 +166,9 @@ public class 변수_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//long a=21500000000L;
-		Byte b=(byte)150;//127;
+		/*Byte b=(byte)150;//127;
+		System.out.println();*/
+		
 		
 	}
 
