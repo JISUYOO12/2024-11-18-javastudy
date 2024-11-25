@@ -6,7 +6,6 @@ public class 연습문제2 {
 		Scanner scan=new Scanner(System.in);
 		System.out.print("정수입력:");
 		int num1=scan.nextInt();
-		System.out.print("+,-,*,% 입력:");
 		System.out.print("정수입력:");
 		int num2=scan.nextInt();
 		switch(scan.next())
@@ -20,9 +19,11 @@ public class 연습문제2 {
 		case "*":
 			System.out.println(num1+"*"+num2+"="+(num1*num2));
 			break;
-		case "/"
-		if(num2==0)
-			System.out.println
+		case "/":
+			if(num2==0)
+				System.out.println("0으로 나눌 수 없다");
+			else
+				System.out.println(num1+"/"+num2+"="+(num1/num2));
 		
 		}
 		
