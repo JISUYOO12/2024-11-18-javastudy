@@ -10,6 +10,10 @@ public class 문제풀이_5 {
 		System.out.println("두번째 정수 입력:");
 		int end=scan.nextInt();
 		int gop=1;
+		for(i=start;i<=end;i++)
+		{
+			gio*=
+		}
 		
 	/*	for(int i=1;i<=6;i++)
 		{
