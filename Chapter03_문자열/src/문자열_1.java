@@ -258,10 +258,10 @@ import java.util.Scanner;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a=10;
+		/*int a=10;
 		int b=20;
 		System.out.println(a+b);
-		System.out.println(String.valueOf(a)+String.valueOf(b)); //웹에서 많이 사용
+		System.out.println(String.valueOf(a)+String.valueOf(b)); //웹에서 많이 사용*/
 		//System.out.println("Hello Java");
 		//String msg="Hello Java";
 		/*int len=msg.indexOf("java");
@@ -275,15 +275,15 @@ import java.util.Scanner;
 			System.out.println("포함되지 않은 문자열입니다");
 		}*/
 		
-		/*String msg="         Hello Java";
-		if(msg.trim().startsWith("Hello"))
+		String msg="         Hello Java"; // 공백처리
+		if(msg.trim().startsWith("Java"))
 		{
 			System.out.println("yes");
 		}
 		else
 		{
 			System.out.println("no");
-		}*/
+		}
 
 /*String[] data= {
 				"자바와 JSP",
@@ -302,8 +302,8 @@ import java.util.Scanner;
 		{
 			if(d.startsWith(fd))
 				System.out.println(d);
-		}*/
-		
+		}
+		*/
 	}
 
 }

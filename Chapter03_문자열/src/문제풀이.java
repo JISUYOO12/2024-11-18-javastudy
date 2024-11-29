@@ -29,8 +29,25 @@ public class 문제풀이 {
 		{
 			System.out.print(msg.charAt(i));
 		}*/
+		//1번
 		Scanner scan=new Scanner(System.in);
-		System.out.println("문자열 입력:");
+		System.out.println("변경전:");
+		String msg=scan.next();
+		String change="";
+		for(int i=0;i<msg.length();i++)
+		{
+			char c=msg.charAt(i);
+			if(c>='A' && c<='Z')
+			{
+				change+=Character.toLowerCase(c);
+			}
+			else if(c>='a' && c<='z')
+			{
+				change+=Character.toUpperCase(c);
+			}
+			System.out.print("변경 후:"+change);
+		}
+		
 		
 	
 	
