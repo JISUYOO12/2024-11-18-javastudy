@@ -110,14 +110,62 @@ public class 문제풀이 {
 		
 		//6
 		
-		int[] num={94,85,95,88,90};
-		int max=90;
-		int min=85;
-		for(int i=0;i<num.length;i++)
+		/*int[] num={94,85,95,88,90}; // 명시적 초기화
+		int max=num[0];
+		int min=num[0];
+		for(int i:num)
 		{
-		
+			if(max<i)
+				max=i;
+			if(min>i)
+				min=i;
+			
 		}
+		System.out.println("최대값:"+max);
+		System.out.println("최소값:"+min);*/
 		
+		//9
+		/*
+		int[] arr= {10,20,30,50,3,60,-3};
+		int index=0; //for문 밖에 index를 선언해야 
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==60)
+				{
+				index=i;
+				break;
+				}
+		}
+		System.out.println("인덱스:"+index); // 블록밖에서 index값을 사용할 수 있음
+		
+		
+		 * 지역변수 => 블럭변수 => 메모리에서 사라진다
+		 * {} => 메모리 자체에서 관리
+		 * 		 ------- Stack : 지역변수 / 매개변수
+		 
+		{
+			int a=10;
+			{
+				int b=20;
+				{
+					int c=30;
+				}
+			}
+		}*/
+		//7
+		int[] arr=new int[10];
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=(int)(Math.random()*10)+1;
+			
+		}
+		System.out.println(Arrays.toString(arr));
+		int sum=0;
+		for(int i:arr)
+		{
+			sum+=i;
+		}
+		System.out.printf("평균:%.2f",sum/10.0);
 		
 		
 
