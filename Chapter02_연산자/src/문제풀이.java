@@ -222,6 +222,7 @@ public class 문제풀이 {
 		int a=scan.nextInt();
 		int b=scan.nextInt();
 		System.out.printf("%d %% %d = %d",a,b,a%b);
+		
 		// 
 		
 	}
