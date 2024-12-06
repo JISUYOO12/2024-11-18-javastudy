@@ -77,6 +77,7 @@ class Student
 {	int hakbun;
 	String name;
 	int age;
+	//멤버변수, 전역변수
 }
 public class 클래스_1 {
 
