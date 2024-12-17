@@ -117,20 +117,20 @@ package com.sist.main;
  *  	
  */
 // 상속이 되려면 => 메모리 할당
-class A
-{
-	public A(String s)
-	{
-		System.out.println(s);
-	}
-}
-class B extends A
-{
-	public B(String s)
-	{
-		super(s); // 상위 클래스 메모리 할당
-		
-	}
+//class A
+//{
+//	public A(String s)
+//	{
+//		System.out.println(s);
+//	}
+//}
+//class B extends A
+//{
+//	public B(String s)
+//	{
+//		super(s); // 상위 클래스 메모리 할당
+//		
+//	}
 //	public B()
 //	{
 //		super(); // default일 경우 생략 => 생략시에 컴파일러가 자동 추가
@@ -138,12 +138,11 @@ class B extends A
 //}
 // super() => 상위 클래스 생성자 호출
 
-
-public class 상속_1 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+//
+//public class 상속_1 {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//	}
+//
+//}

@@ -18,7 +18,7 @@ public class MainClass {
 		//Sub sub=new Sub();
 		//Object obj=new sub();
 		// 묶으서 한개로 관리
-		obj.tostring();
+		//obj.tostring();
 	}
 
 }
