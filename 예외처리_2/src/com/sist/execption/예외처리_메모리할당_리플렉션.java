@@ -24,7 +24,7 @@ public class 예외처리_메모리할당_리플렉션 {
 			Class clsName=
 					Class.forName("com.sist.execption.Movie");
 			// 클래스 정보 읽기 
-			Object obj=clsName.getDeclaredConstructor().newInstance();
+			Object obj=clsName.getDeclaredConstructor().newInstance(); 
 			
 			Method[] methods=clsName.getDeclaredMethods();
 			
