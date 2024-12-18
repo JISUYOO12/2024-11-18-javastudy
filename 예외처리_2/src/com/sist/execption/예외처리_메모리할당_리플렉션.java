@@ -16,7 +16,7 @@ class Movie
 public class 예외처리_메모리할당_리플렉션 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubs
         //Movie m=new Movie();
         //m.display();
 		try
