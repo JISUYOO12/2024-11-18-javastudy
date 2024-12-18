@@ -3,7 +3,7 @@ package com.sist.execption;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-// Class.forName("") => ClassNotFoundException 
+// Class.forName("") => ClassNotFoundException  // jar 파일이 없거나 class 파일이 없을 경우 발생한 경우
 // CheckException => 반드시 예외처리후 사용 
 // 메모리 할당 
 class Movie
@@ -22,7 +22,7 @@ public class 예외처리_메모리할당_리플렉션 {
 		try
 		{
 			Class clsName=
-					Class.forName("com.sist.exception.Movie");
+					Class.forName("com.sist.execption.Movie");
 			// 클래스 정보 읽기 
 			Object obj=clsName.getDeclaredConstructor().newInstance();
 			
