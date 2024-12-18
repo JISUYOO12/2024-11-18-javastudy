@@ -48,16 +48,16 @@ public class 예외처리_finally사용법 {
         	}catch(IOException e) {}
         }*/
         // 자동 => resource
-		try(FileReader fr=new FileReader("c:\\javaDev\\seoul_nature.txt"))
+	try(FileReader fr=new FileReader("c:\\javaDev\\seoul_nature.txt"))
+	{
+		int i=0;
+	while((i=fr.read())!=-1)
 		{
-			int i=0;
-			while((i=fr.read())!=-1)
-			{
-				System.out.print((char)i);
-			}
-			// 자동으로 파일 닫기가 가능 
-		}catch(IOException e)
-		{
+			System.out.print((char)i);
+		}
+		// 자동으로 파일 닫기가 가능 
+	}catch(IOException e)
+	{
 			System.out.println(e.getMessage());
 		}
         
