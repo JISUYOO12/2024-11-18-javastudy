@@ -24,11 +24,14 @@ public class 예외처리_메모리할당_리플렉션 {
 			Class clsName=
 					Class.forName("com.sist.execption.Movie");
 			// 클래스 정보 읽기 
-			Object obj=clsName.getDeclaredConstructor().newInstance(); 
+			Object obj=clsName.getDeclaredConstructor().newInstance();  //lsName.getDeclaredConstructor()는 해당 클래스의 기본 생성자를 얻습니다
+																		//newInstance() 메서드는 그 생성자를 호출하여 Movie 클래스의 객체를 동적으로 생성합니다
 			
-			Method[] methods=clsName.getDeclaredMethods();
+			Method[] methods=clsName.getDeclaredMethods(); //getDeclaredMethods()는 클래스에서 정의된 모든 메서드를 배열 형태로 반환합니다.
 			
-			methods[0].invoke(obj, null);
+			methods[0].invoke(obj, null); //methods[0]는 Movie 클래스에서 정의된 첫 번째 메서드를 가져옵니다. (여기서는 display() 메서드)
+										  // invoke(obj, null)는 display() 메서드를 동적으로 호출하는 코드입니다.
+										// obj는 Movie 클래스의 객체이고, null은 display() 메서드의 파라미터가 없으므로 넘겨줍니다.
 		}catch(Exception e) {}
 //		}catch(ClassNotFoundException ex){}
 //		 catch(NoSuchMethodException e) {}
