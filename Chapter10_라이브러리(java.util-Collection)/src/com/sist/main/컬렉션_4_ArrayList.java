@@ -39,7 +39,7 @@ public class 컬렉션_4_ArrayList {
 			System.out.print(i+" ");
 		}
 		System.out.println("\n");
-		System.out.println("\n");
+		System.out.println("");
 		LinkedList<Integer> vec2=new LinkedList<Integer>();
 		vec.add(1);
 		vec.add(2);
