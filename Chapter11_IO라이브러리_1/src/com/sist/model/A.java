@@ -1,6 +1,21 @@
 package com.sist.model;
-import com.sist.io.I;
+import com.sist.io.*;
 
-//public class A implement I {
 
-//}
+public class A implements I {
+
+	@Override
+	public void excute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}
