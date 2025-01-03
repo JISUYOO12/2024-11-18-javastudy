@@ -212,7 +212,7 @@ implements ActionListener,Runnable,MouseListener
 	{
 		try
 		{
-			s=new Socket("192.168.10.110",5555);
+			s=new Socket("localhost",5555);
 			// 서버 정보 
 			out=s.getOutputStream();
 			in=new BufferedReader(
