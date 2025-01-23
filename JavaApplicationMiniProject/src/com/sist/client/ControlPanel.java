@@ -13,6 +13,13 @@ public class ControlPanel extends JPanel{
     FoodGenrePenal fgp;
     FoodFindPenal ffp;
     FoodDetailPenal fdp;
+    BoardList bList;
+    BoardInsert bInsert;
+    BoardDetail bDetail;
+    BoardUpdate bUpdate;
+    BoardReply bReply;
+    BoardDelete bDelete;
+    NewsPanel np;
     CardLayout card=new CardLayout();
     public ControlPanel()
     {
@@ -27,6 +34,33 @@ public class ControlPanel extends JPanel{
     	add("FIND",ffp);
     	fdp=new FoodDetailPenal(this);
     	add("DETAIL",fdp);
+    	// 게시판 
+    	
+    	bList=new BoardList(this);
+    	add("BLIST",bList);
+    	bInsert=new BoardInsert(this);
+    	add("BINSERT",bInsert);
+    	bDetail=new BoardDetail(this);
+    	add("BDETAIL",bDetail);
+    	bUpdate=new BoardUpdate(this);
+    	add("BUPDATE",bUpdate);
+    	bReply=new BoardReply(this);
+    	add("BREPLY",bReply);
+    	bDelete=new BoardDelete(this);
+    	add("BDELETE",bDelete);
+    	np=new  NewsPanel(this);
+    	add("NP",np);
+    	
+    	/*
+    	 *  사용자 요청 => ControlPanel => 화면 이동 
+    	 *  						필요한 데이터 전송
+    	 *  
+    	 *  
+    	 *  사용자 요청 => Controller => Model 
+    	 *  							| => 데이터전송
+    	 *  							화면이동 (view) : jsp
+    	 *  => mvc구조 (Spring형식)
+    	 */
     }
     
 }

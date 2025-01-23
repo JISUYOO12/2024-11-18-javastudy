@@ -59,6 +59,7 @@ implements ActionListener,Runnable,MouseListener
 		mf.b2.addActionListener(this); // 맛집
 		mf.b3.addActionListener(this); // 검색
 		mf.b7.addActionListener(this); // 뉴스 
+		mf.b5.addActionListener(this); // 커뮤니티
 		// Chat => Socket 
 		cp.cp.tf.addActionListener(this);
 		cp.cp.table.addMouseListener(this);
@@ -257,14 +258,18 @@ implements ActionListener,Runnable,MouseListener
 		}
 		else if(e.getSource()==mf.b7)
 		{
-			cp.card.show(cp, "DETAIL");
+			cp.card.show(cp, "NP");
+		}
+		else if(e.getSource()==mf.b5)
+		{
+			cp.card.show(cp, "BLIST");
 		}
 	}
 	public void connection(MemberVO vo)
 	{
 		try
-		{	//192.168.10.110
-			s=new Socket("localhost",5555);
+		{
+			s=new Socket("localhost",3355);
 			// 서버 연결 => s는 서버
 			// 서버로 전송 
 			out=s.getOutputStream();
@@ -282,6 +287,7 @@ implements ActionListener,Runnable,MouseListener
 		// 서버로부터 값을 받아서 출력 
 		new Thread(this).start(); // run()메소드 호출 
 	}
+	
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
@@ -302,6 +308,7 @@ implements ActionListener,Runnable,MouseListener
 			}
 		}
 	}
+	
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub

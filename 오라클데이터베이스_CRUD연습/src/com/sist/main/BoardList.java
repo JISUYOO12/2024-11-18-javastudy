@@ -58,6 +58,7 @@ public class BoardList extends JPanel{
     			column.setPreferredWidth(50);
     		}
     	}
+    
     	table.getTableHeader().setReorderingAllowed(false);
     	table.setShowVerticalLines(false);
     	table.setRowHeight(30);

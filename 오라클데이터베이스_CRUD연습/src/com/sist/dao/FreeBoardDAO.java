@@ -153,6 +153,7 @@ public class FreeBoardDAO {
 	   }
 	   return total;
    }
+   
    // 2. 상세보기 => WHERE => Primary Key값을 넘겨준다 
    // 게시물 번호 => 자동 증가 
    public FreeBoardVO boardDetailData(int no)
@@ -206,6 +207,7 @@ public class FreeBoardDAO {
 	   }
 	   return vo;
    }
+   
    // 3. 글쓰기 => INSERT 
    public void boardInsert(FreeBoardVO vo)
    {
