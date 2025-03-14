@@ -18,6 +18,7 @@ public class FoodMain {
         		Document doc=
         				Jsoup.connect("https://www.menupan.com/restaurant/bestrest/bestrest.asp?page="+i+"&trec=8655&pt=rt").get();
         		Elements link=doc.select("p.listName span.restName a");
+        	
         		System.out.println("======"+i+"page=====");
         		for(int j=0;j<link.size();j++)
         		{	try
